@@ -22,7 +22,7 @@
  - START ：指定程式名稱和起始位置
  - END : 結束處並指定程式中第一個執行指令
  - BYTE : 定義字元或十六進位常數 ex: 
-    - C 'EOF' = 3 (c計算引號內有多少字元)
+    - C 'EOF' = 3 (c計算引號內有多少字元)
     - X 'F1' = 1  (x固定長度1)
  - WORD : 定義一個字組的整數常數 （長度固定3）
  - RESB : 保留所示數量位元組 ex:
@@ -35,22 +35,22 @@
 2. 把運算元對應到符號的位置
     - parse 1 : 計算指令位置及標籤（產生符號表）
     - parse 2 : 組譯指令產生目的碼
-3. 
-    - BYTE C 'EOF' => ASCii 十六進位 454F46
+3. 
+    - BYTE C 'EOF' => ASCii 十六進位 454F46
     - WORD 30 => 轉十六進位 00001E
     - RES 不輸出目的碼
-    - BYTE X 'F1' => 直接輸出文字F1
+    - BYTE X 'F1' => 直接輸出文字F1
     - RSUB 輸出OP Code且後面補滿0
     - BUFFER'X 直接加 8000
 
 ## Usage
-將此專案clone下來後有兩個執行方法
+將此專案clone下來後有兩個執行方法
 
 方法1.
 -  利用Eclipse執行
 - 注意SIC.txt檔案路徑位置放置於src的上一層資料夾才能正確執行
 
-<img src="Screenshot/pic1.png" >
+<img src="Screenshot/pic1.png" width="450">
 
 方法2.
 - 利用終端機執行
@@ -67,4 +67,4 @@
 
 - 注意SIC.txt檔案路徑位要與java放一起才能正確執行
 
-<img src="Screenshot/pic2.png" >
+<img src="Screenshot/pic2.png" width="450">
